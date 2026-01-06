@@ -69,12 +69,51 @@ koi-screensaver
 
 ## 🙀 If the command is not found
 
-### Add Cargo binaries to your PATH:
+### 🔧 Command not found after install?
 
+After running:
+
+```bash
+cargo install --git https://github.com/siraprem/koi_terminal
+```
+
+If the command is not found, it means Cargo’s bin directory is not in your PATH.
+
+Cargo installs binaries in:
+
+```bash
+~/.cargo/bin
+```
+Add this directory to your PATH depending on your shell:
+
+### 🐚 Bash / Zsh
 ```bash
 echo 'export PATH="$HOME/.cargo/bin:$PATH"' >> ~/.bashrc
 source ~/.bashrc
 ```
+### 🐟 Fish
+
+```fish
+fish_add_path ~/.cargo/bin
+Then restart the terminal.
+```
+### 🧪 Check if it worked
+Run:
+
+```bash
+which koi-screensaver
+```
+You should see something like:
+```swift
+/home/youruser/.cargo/bin/koi-screensaver
+```
+Now you can run:
+
+```bash
+koi-screensaver
+```
+
+---
 
 ## 🏗️ Development
 

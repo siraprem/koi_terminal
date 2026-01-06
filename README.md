@@ -6,7 +6,6 @@
 
 [![License](https://img.shields.io/badge/license-MIT-blue.svg?style=for-the-badge&logo=opensource&logoColor=white)](LICENSE)
 [![Rust](https://img.shields.io/badge/Rust-100%25-orange.svg?style=for-the-badge&logo=rust&logoColor=white)](https://www.rust-lang.org/)
-[![Build Status](https://img.shields.io/github/actions/workflow/status/siraprem/koi_terminal/ci.yml?style=for-the-badge&logo=github&logoColor=white)](https://github.com/siraprem/koi_terminal/actions)
 [![Last Commit](https://img.shields.io/github/last-commit/siraprem/koi_terminal?style=for-the-badge&logo=git&logoColor=white)](https://github.com/siraprem/koi_terminal/commits/master)
 
 </div>

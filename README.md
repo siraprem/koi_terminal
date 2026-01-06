@@ -32,42 +32,42 @@
 
 ---
 
-## 📖 Sobre o Projeto
+## 📖 About
 
-Koi Terminal é uma aplicação de terminal encantadora que traz pequenos kois (peixes carpa japoneses) para o seu ambiente de linha de comando. Desenvolvido em Rust para máxima performance e confiabilidade.
+Koi Terminal is a delightful terminal application that brings adorable little kois (Japanese carp fish) to your command-line environment. Built with Rust for maximum performance and reliability.
 
-### ✨ Características
+### ✨ Features
 
-- 🐟 Animações fluidas de kois nadando
-- 🎨 Interface colorida e customizável  
-- ⚡ Alto performance com Rust
-- 🔧 Configuração flexível
-- 🌐 Suporte multiplataforma
-- 📦 Executável único sem dependências
+- 🐟 Smooth koi swimming animations
+- 🎨 Colorful and customizable interface  
+- ⚡ High performance with Rust
+- 🔧 Flexible configuration
+- 🌐 Cross-platform support
+- 📦 Single executable with no dependencies
 
 ---
 
-## 🐧 Instalação
+## 🐧 Installation
 
-### 📋 Pré-requisitos
+### 📋 Prerequisites
 
-Certifique-se de ter o Rust instalado em seu sistema:
+Make sure you have Rust installed on your system:
 
 ```bash
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 source ~/.cargo/env
 ```
 
-### 🔧 Instalação por Distribuição Linux
+### 🔧 Installation by Linux Distribution
 
 <details>
 <summary><b>🟠 Ubuntu / Debian / Mint</b></summary>
 
 ```bash
-# Instalação via cargo
+# Install via cargo
 cargo install --git https://github.com/siraprem/koi_terminal
 
-# Ou compile do código fonte
+# Or compile from source
 sudo apt update
 sudo apt install build-essential
 git clone https://github.com/siraprem/koi_terminal.git
@@ -82,10 +82,10 @@ sudo cp target/release/koi_terminal /usr/local/bin/
 <summary><b>🔴 Fedora / CentOS / RHEL</b></summary>
 
 ```bash
-# Instalação via cargo
+# Install via cargo
 cargo install --git https://github.com/siraprem/koi_terminal
 
-# Ou compile do código fonte
+# Or compile from source
 sudo dnf groupinstall "Development Tools"
 sudo dnf install rust cargo
 git clone https://github.com/siraprem/koi_terminal.git
@@ -100,10 +100,10 @@ sudo cp target/release/koi_terminal /usr/local/bin/
 <summary><b>🟢 openSUSE</b></summary>
 
 ```bash
-# Instalação via cargo
+# Install via cargo
 cargo install --git https://github.com/siraprem/koi_terminal
 
-# Ou compile do código fonte
+# Or compile from source
 sudo zypper install -t pattern devel_basis
 sudo zypper install rust cargo
 git clone https://github.com/siraprem/koi_terminal.git
@@ -118,10 +118,10 @@ sudo cp target/release/koi_terminal /usr/local/bin/
 <summary><b>🟡 Arch Linux / Manjaro</b></summary>
 
 ```bash
-# Instalação via cargo
+# Install via cargo
 cargo install --git https://github.com/siraprem/koi_terminal
 
-# Ou compile do código fonte
+# Or compile from source
 sudo pacman -S base-devel rust
 git clone https://github.com/siraprem/koi_terminal.git
 cd koi_terminal
@@ -135,10 +135,10 @@ sudo cp target/release/koi_terminal /usr/local/bin/
 <summary><b>🟣 Gentoo</b></summary>
 
 ```bash
-# Instalação via cargo
+# Install via cargo
 cargo install --git https://github.com/siraprem/koi_terminal
 
-# Ou compile do código fonte
+# Or compile from source
 emerge --ask dev-lang/rust
 git clone https://github.com/siraprem/koi_terminal.git
 cd koi_terminal
@@ -152,10 +152,10 @@ sudo cp target/release/koi_terminal /usr/local/bin/
 <summary><b>🔵 Alpine Linux</b></summary>
 
 ```bash
-# Instalação via cargo
+# Install via cargo
 cargo install --git https://github.com/siraprem/koi_terminal
 
-# Ou compile do código fonte
+# Or compile from source
 sudo apk add build-base rust cargo
 git clone https://github.com/siraprem/koi_terminal.git
 cd koi_terminal
@@ -165,36 +165,36 @@ sudo cp target/release/koi_terminal /usr/local/bin/
 
 </details>
 
-### 🎯 Instalação Rápida (Todas as Distribuições)
+### 🎯 Quick Install (All Distributions)
 
 ```bash
-# Clone e instale em uma linha
+# Clone and install in one line
 git clone https://github.com/siraprem/koi_terminal.git && cd koi_terminal && cargo install --path .
 ```
 
 ---
 
-## 🎮 Como Usar
+## 🎮 Usage
 
-### Comandos Básicos
+### Basic Commands
 
 ```bash
-# Iniciar o Koi Terminal
+# Start Koi Terminal
 koi_terminal
 
-# Executar com configurações personalizadas
+# Run with custom settings
 koi_terminal --config ~/.config/koi/config.toml
 
-# Modo de demonstração
+# Demo mode
 koi_terminal --demo
 
-# Exibir ajuda
+# Show help
 koi_terminal --help
 ```
 
-### ⚙️ Configuração
+### ⚙️ Configuration
 
-Crie um arquivo de configuração em `~/.config/koi/config.toml`:
+Create a configuration file at `~/.config/koi/config.toml`:
 
 ```toml
 [display]
@@ -218,7 +218,7 @@ collision_detection = true
 
 <div align="center">
 
-| Modo Padrão | Modo Colorido | Modo Demo |
+| Default Mode | Colorful Mode | Demo Mode |
 |-------------|---------------|-----------|
 | ![Default](https://via.placeholder.com/250x150/0d1117/58a6ff?text=🐟+Default) | ![Colorful](https://via.placeholder.com/250x150/0d1117/ff6b6b?text=🎨+Colorful) | ![Demo](https://via.placeholder.com/250x150/0d1117/4ecdc4?text=✨+Demo) |
 
@@ -226,81 +226,81 @@ collision_detection = true
 
 ---
 
-## 🏗️ Desenvolvimento
+## 🏗️ Development
 
-### 🛠️ Compilando do Código Fonte
+### 🛠️ Building from Source
 
 ```bash
-# Clone o repositório
+# Clone the repository
 git clone https://github.com/siraprem/koi_terminal.git
 cd koi_terminal
 
-# Execute os testes
+# Run tests
 cargo test
 
-# Compile e execute em modo debug
+# Build and run in debug mode
 cargo run
 
-# Compile em modo release
+# Build in release mode
 cargo build --release
 ```
 
-### 📁 Estrutura do Projeto
+### 📁 Project Structure
 
 ```
 koi_terminal/
 ├── src/
-│   ├── main.rs          # Ponto de entrada principal
-│   ├── koi/             # Módulo dos kois
-│   ├── terminal/        # Interface do terminal
-│   └── config/          # Sistema de configuração
-├── tests/               # Testes automatizados
-├── docs/                # Documentação
-└── examples/            # Exemplos de uso
+│   ├── main.rs          # Main entry point
+│   ├── koi/             # Koi module
+│   ├── terminal/        # Terminal interface
+│   └── config/          # Configuration system
+├── tests/               # Automated tests
+├── docs/                # Documentation
+└── examples/            # Usage examples
 ```
 
 ---
 
-## 🤝 Contribuindo
+## 🤝 Contributing
 
-Contribuições são muito bem-vindas! Veja como você pode ajudar:
+Contributions are very welcome! Here's how you can help:
 
-1. **Fork** o projeto
-2. Crie uma **branch** para sua feature (`git checkout -b feature/AmazingFeature`)
-3. **Commit** suas mudanças (`git commit -m 'Add some AmazingFeature'`)
-4. **Push** para a branch (`git push origin feature/AmazingFeature`)
-5. Abra um **Pull Request**
+1. **Fork** the project
+2. Create a **branch** for your feature (`git checkout -b feature/AmazingFeature`)
+3. **Commit** your changes (`git commit -m 'Add some AmazingFeature'`)
+4. **Push** to the branch (`git push origin feature/AmazingFeature`)
+5. Open a **Pull Request**
 
 ### 📝 Guidelines
 
-- Mantenha o código limpo e bem documentado
-- Adicione testes para novas funcionalidades
-- Siga as convenções do Rust (`cargo fmt` e `cargo clippy`)
-- Atualize a documentação quando necessário
+- Keep code clean and well documented
+- Add tests for new features
+- Follow Rust conventions (`cargo fmt` and `cargo clippy`)
+- Update documentation when necessary
 
 ---
 
-## 📄 Licença
+## 📄 License
 
-Este projeto está licenciado sob a Licença MIT - veja o arquivo [LICENSE](LICENSE) para detalhes.
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ---
 
-## 🙏 Agradecimentos
+## 🙏 Acknowledgments
 
-- 🦀 **Rust Community** - Pela linguagem incrível
-- 🐟 **Koi Enthusiasts** - Pela inspiração
-- 💻 **Terminal Artists** - Pelos exemplos e ideias
-- 🌟 **Contributors** - Por tornar este projeto melhor
+- 🦀 **Rust Community** - For the amazing language
+- 🐟 **Koi Enthusiasts** - For the inspiration
+- 💻 **Terminal Artists** - For examples and ideas
+- 🌟 **Contributors** - For making this project better
 
 ---
 
 <div align="center">
 
-**[⬆ Voltar ao topo](#-koi-terminal)**
+**[⬆ Back to top](#-koi-terminal)**
 
-Feito com 💙 por [Samira](https://github.com/siraprem)
+Made with 💙 by [Samira](https://github.com/siraprem)
 
-*Que os kois tragam tranquilidade ao seu terminal!* 🐟✨
+*May the kois bring tranquility to your terminal!* 🐟✨
 
 </div>

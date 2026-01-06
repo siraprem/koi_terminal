@@ -112,6 +112,7 @@ Now you can run:
 ```bash
 koi-screensaver
 ```
+If you use another shell, make sure that `~/.cargo/bin` is in your PATH.
 
 ---
 

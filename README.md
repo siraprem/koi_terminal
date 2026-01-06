@@ -32,7 +32,6 @@ Koi Terminal is a delightful terminal application that brings adorable little ko
 ### ✨ Features
 
 - 🐟 Smooth koi swimming animations
-- 🎨 Colorful and customizable interface  
 - ⚡ High performance with Rust
 - 🌐 Cross-platform support
 - 📦 Single executable with no dependencies
